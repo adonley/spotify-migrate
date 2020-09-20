@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Allow files and folders
+!templates/**/*
+!static/**/*
+!**/*.py
+!requirements.txt
+!LICENSE

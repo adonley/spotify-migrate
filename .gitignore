@@ -1,0 +1,4 @@
+.flask_session/
+.spotify_caches/
+venv/
+.idea/

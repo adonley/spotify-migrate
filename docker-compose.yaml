@@ -1,0 +1,11 @@
+version: '3'
+services:
+  flask:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      FLASK_ENV: development
+      SPOTIPY_CLIENT_ID: <REPLACE_ME>
+      SPOTIPY_CLIENT_SECRET: <REPLACE_ME>
+      SPOTIPY_REDIRECT_URI: http://127.0.0.1:8080

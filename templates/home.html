@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+<br>
+
+<div class="row">
+    <div class="offset-1 col-10 center">
+        <a href="/export"><button class="btn btn-primary">Export Account Information</button></a>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="offset-1 col-10 center">
+        <h2><strong>- or -</strong></h2>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="offset-4 col-4">
+        <div class="row center">
+            <div class="col-12">
+                <h5>Import Account Information</h5>
+            </div>
+        </div>
+
+        <form method="post" enctype="multipart/form-data" action="/import">
+            <div class="input-group">
+                <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" accept=".json">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
