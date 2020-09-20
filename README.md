@@ -27,6 +27,11 @@ Make sure to edit the environment in the `docker-compose.yaml` for blah and blah
 docker-compose up
 ```
 
+### Other thoughts
+You probably shouldn't host this publically unless you want to fix up the session storage, productionize the
+docker image, rate limit / add captcha to some of the endpoints, sanitize the file that's uploaded
+via the `/import` api endpoint and add security headers (HSTS, nosniff etc).
+
 ### Shout outs
 
 
