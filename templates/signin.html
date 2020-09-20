@@ -1,13 +1,11 @@
 {% extends 'base.html' %}
 
 {% block container %}
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
+  <div class="row center">
+    <div class="offset-2 col-8">
       <h2>
-        <a href="{{ auth_url }}">Sign in</a>
+        <a href="{{ auth_url }}"><button type="submit" class="btn btn-primary">Sign in w/ Spotify</button></a>
       </h2>
     </div>
-    <div class="col-1"></div>
   </div>
 {% endblock %}
